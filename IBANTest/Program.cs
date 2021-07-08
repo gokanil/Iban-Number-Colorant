@@ -58,10 +58,10 @@ namespace IBANTest
             Console.WriteLine();
             ConsoleWriteInLine("-----------Account(Hesap)--------------");
             ConsoleWriteInColor(IbanModel.AccountNumber, " :Hesap Numarası(Account Number)", nameof(IbanModel.AccountNumber));
-            ConsoleWriteInColor(IbanModel.AccountNumberPrefix, " :Hesap Numarası Prefix(Account Number Prefix)", nameof(IbanModel.AccountNumberPrefix));
-            ConsoleWriteInColor(IbanModel.BalanceAccountNumber, " :Balance Hesap Numarası(Balance Account Number)", nameof(IbanModel.BalanceAccountNumber));
+            ConsoleWriteInColor(IbanModel.AccountNumberPrefix, " :Hesap Numarası Ön Hane(Account Number Prefix)", nameof(IbanModel.AccountNumberPrefix));
+            ConsoleWriteInColor(IbanModel.BalanceAccountNumber, " :Bakiyeli Hesap Numarası(Balance Account Number)", nameof(IbanModel.BalanceAccountNumber));
             ConsoleWriteInColor(IbanModel.AccountType, " :Hesap Türü(Account Type)", nameof(IbanModel.AccountType));
-            ConsoleWriteInColor(IbanModel.OwnerAccountType, " :Owner Hesap Türü(Owner Account Type)", nameof(IbanModel.OwnerAccountType));
+            ConsoleWriteInColor(IbanModel.OwnerAccountType, " :Hesap Türü Sahibi(Owner Account Type)", nameof(IbanModel.OwnerAccountType));
 
             //Others
             Console.WriteLine();
@@ -100,15 +100,14 @@ namespace IBANTest
 
             if (WriteLine)
                 Console.WriteLine();
-
         }
 
         static void ConsoleWriteInLine(string value = null, string value2 = null)
         {
             if (string.IsNullOrWhiteSpace(value))
                 value = "-";
-            Console.WriteLine(value + value2);
 
+            Console.WriteLine(value + value2);
         }
     }
 }

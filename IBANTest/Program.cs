@@ -44,8 +44,8 @@ namespace IBANTest
             ConsoleWriteInLine("-----------Country(Ülke)--------------");
             ConsoleWriteInColor(IbanModel.CountryCode, " :Ülke Kodu(country Code)", nameof(IbanModel.CountryCode));
             ConsoleWriteInLine(IbanModel.CountryCodeAndCheckDigit, " :Ülke Kodu ve Kontrol Basamağı(Country Code And Check Digit)");
-            ConsoleWriteInLine(IbanModel.IsFromEurozoneSEPACountry, " :Euro Bölgesindeki SEPA Ülkesinden mi?(Is From Eurozone SEPA Country)");
-            ConsoleWriteInLine(IbanModel.IsFromSEPACountry, " :SEPA Ülkesinden mi?(Is From SEPA Country)");
+            ConsoleWriteInLine(IbanModel.IsFromEurozoneSEPACountry, " :SEPA Euro Bölgesi üyesi olan ülkeye mi ait?.(Is From Eurozone SEPA Country)");
+            ConsoleWriteInLine(IbanModel.IsFromSEPACountry, " :SEPA üyesi olan ülkeye mi ait?(Is From SEPA Country)");
             ConsoleWriteInLine(IbanModel.IsSupportedCountry, " :Desteklenen Ülke mi?(Is Supported Country)");
 
             //Bank
@@ -58,7 +58,7 @@ namespace IBANTest
             Console.WriteLine();
             ConsoleWriteInLine("-----------Account(Hesap)--------------");
             ConsoleWriteInColor(IbanModel.AccountNumber, " :Hesap Numarası(Account Number)", nameof(IbanModel.AccountNumber));
-            ConsoleWriteInColor(IbanModel.AccountNumberPrefix, " :Hesap Numarası Ön Hane(Account Number Prefix)", nameof(IbanModel.AccountNumberPrefix));
+            ConsoleWriteInColor(IbanModel.AccountNumberPrefix, " :Hesap Numarası Ön Eki(Account Number Prefix)", nameof(IbanModel.AccountNumberPrefix));
             ConsoleWriteInColor(IbanModel.BalanceAccountNumber, " :Bakiyeli Hesap Numarası(Balance Account Number)", nameof(IbanModel.BalanceAccountNumber));
             ConsoleWriteInColor(IbanModel.AccountType, " :Hesap Türü(Account Type)", nameof(IbanModel.AccountType));
             ConsoleWriteInColor(IbanModel.OwnerAccountType, " :Hesap Türü Sahibi(Owner Account Type)", nameof(IbanModel.OwnerAccountType));
